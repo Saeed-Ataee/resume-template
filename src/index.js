@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import './index.scss';
 import reportWebVitals from './reportWebVitals';
+import DefaultLayout from './layouts/default';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DefaultLayout />
   </React.StrictMode>,
   document.getElementById('root')
 );

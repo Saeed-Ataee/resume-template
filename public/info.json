@@ -1,0 +1,175 @@
+{
+  "order": [
+    "about",
+    "bio",
+    "skills",
+    "educations",
+    "references",
+    "experiences",
+    "projects",
+    "contact"
+  ],
+  "about": {
+    "fullname": "Saeed Ataee",
+    "jobTitle": "Software Engineer",
+    "tabularInfo": [
+      {
+        "title": "Birth Date",
+        "value": "24 Dec, 1994",
+        "icon": "Cake"
+      },
+      {
+        "title": "Email",
+        "value": "saeed.ataee.1994@gmail.com",
+        "icon": "Email"
+      },
+      { "title": "Phone", "value": "989380692764", "icon": "Phone" },
+      {
+        "title": "Location",
+        "value": "Iran, Mashhad",
+        "icon": "LocationOn"
+      },
+      {
+        "title": "Instagram",
+        "value": "@ataeesaeed1994",
+        "icon": "Instagram"
+      }
+    ]
+  },
+  "bio": {
+    "resumeLink": "https://s2.q4cdn.com/498544986/files/doc_downloads/test.pdf",
+    "description": "Cras mattis consectetur purus sit amet fermentum.\\n      Cras justo odio, dapibus ac facilisis in, egestas eget quam.\\n      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.\\n      Praesent commodo cursus magna, vel scelerisque nisl consectetur et.\\nCras mattis consectetur purus sit amet fermentum.\\n      Cras justo odio, dapibus ac facilisis in, egestas eget quam.\\n      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.\\n      Praesent commodo cursus magna, vel scelerisque nisl consectetur et.\\nCras mattis consectetur purus sit amet fermentum.\\n      Cras justo odio, dapibus ac facilisis in, egestas eget quam.\\n      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.\\n      Praesent commodo cursus magna, vel scelerisque nisl consectetur et.\\nCras mattis consectetur purus sit amet fermentum.\\n      Cras justo odio, dapibus ac facilisis in, egestas eget quam.\\n      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.\\n      Praesent commodo cursus magna, vel scelerisque nisl consectetur et.\\nCras mattis consectetur purus sit amet fermentum.\\n      Cras justo odio, dapibus ac facilisis in, egestas eget quam.\\n      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.\\n      Praesent commodo cursus magna, vel scelerisque nisl consectetur et."
+  },
+  "educations": [
+    {
+      "year": "2008 - 2012",
+      "title": "Talaye Daran High School",
+      "description": "Something here as description that I don't know exactly"
+    },
+    {
+      "year": "2012 - 2017",
+      "title": "Ferdowsi University Of Mashhad",
+      "description": "Something here as description that I don't know exactly. Something here as description that I don't know exactly"
+    },
+    {
+      "year": "2017 - 2022",
+      "title": "Again Talaye Daran High School",
+      "description": "Something here as description that I don't know exactly. Something here as description that I don't know exactly. Something here as description that I don't know exactly"
+    }
+  ],
+  "skills": [
+    { "title": "javascript", "score": 80 },
+    { "title": "nodejs", "score": 60 },
+    { "title": "react", "score": 30 },
+    { "title": "devops", "score": 70 }
+  ],
+  "experiences": [
+    {
+      "company": "Part",
+      "jobTitle": "backend",
+      "year": "2012 - 2013",
+      "tasks": [
+        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
+      ]
+    },
+    {
+      "company": "Part",
+      "jobTitle": "master",
+      "year": "2013 - 2015",
+      "tasks": [
+        "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
+        "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,"
+      ]
+    },
+    {
+      "company": "Infodeniz",
+      "jobTitle": "Front",
+      "year": "2015 - 2017",
+      "tasks": [
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
+        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form"
+      ]
+    }
+  ],
+  "contact": {
+    "location": {
+      "src": "https://api.mapbox.com/styles/v1/mapbox/light-v10/static/59.523251,36.299350,10/500x500?access_token=pk.eyJ1Ijoic2lyLXNhZWVkLTIwMTIiLCJhIjoiY2wxYXZoZmVuMGFnMjNjcDhla28zdGZiNSJ9.Eq6rqlFuVVx6DokI17muLQ",
+      "alt": "Map of the Edmund Pettus Bridge in Selma, Alabama, with a black 'L' marker positioned in the middle of the bridge."
+    },
+    "api": {}
+  },
+  "projects": [
+    {
+      "title": "Merat",
+      "year": "2019 - 2021",
+      "position": "Software Developer",
+      "technologies": ["Nodejs", "Angular.js", "html", "css", "html", "css"],
+      "description": "some text here for description"
+    },
+    {
+      "title": "Rasam",
+      "year": "2019 - 2021",
+      "position": "Junior Full Stack Developer",
+      "technologies": [
+        "Nodejs",
+        "Angular.js",
+        "html",
+        "css",
+        "html",
+        "css",
+        "html",
+        "css"
+      ],
+      "description": "some text here for description"
+    },
+    {
+      "title": "Signal",
+      "year": "2019 - 2021",
+      "position": "Developer",
+      "technologies": ["Nodejs", "Vue.js", "html", "css"]
+    },
+    {
+      "title": "Test",
+      "year": "2019 - 2021",
+      "position": "Developer",
+      "technologies": ["Nodejs", "Vue.js", "html", "css"],
+      "description": "some text here for description. some text here for description. some text here for description. some text here for description. some text here for description. some text here for description"
+    }
+  ],
+  "references": [
+    {
+      "fullname": "Saeed Ataee",
+      "role": "Software Engineer",
+      "contactInfo": {
+        "email": "saeed@test.com",
+        "phone": "989380692764",
+        "instagram": "ataeesaeed1994"
+      },
+      "img": "https://www.freecodecamp.org/news/content/images/2021/03/Quincy-Larson-photo.jpg"
+    },
+    {
+      "fullname": "Reza Shabani",
+      "role": "DevOps Engineer",
+      "contactInfo": {
+        "email": "reza@test.com",
+        "phone": "989380692764",
+        "instagram": "ataeesaeed1994"
+      },
+      "img": "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157693/talent_tabs_section-9a2016252f5e887b11b53080a29d9013.jpg"
+    },
+    {
+      "fullname": "Reza Hemati",
+      "role": "Backend Engineer",
+      "contactInfo": {
+        "email": "hemati@test.com",
+        "phone": "989380692764",
+        "instagram": "ataeesaeed1994"
+      },
+      "img": "https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/1.jpg"
+    }
+  ]
+}
