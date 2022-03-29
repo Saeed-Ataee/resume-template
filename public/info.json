@@ -10,6 +10,7 @@
     "contact"
   ],
   "about": {
+    "image": "https://avatars.githubusercontent.com/u/15707376?v=4",
     "fullname": "Saeed Ataee",
     "jobTitle": "Software Engineer",
     "tabularInfo": [
@@ -38,138 +39,146 @@
   },
   "bio": {
     "resumeLink": "https://s2.q4cdn.com/498544986/files/doc_downloads/test.pdf",
-    "description": "Cras mattis consectetur purus sit amet fermentum.\\n      Cras justo odio, dapibus ac facilisis in, egestas eget quam.\\n      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.\\n      Praesent commodo cursus magna, vel scelerisque nisl consectetur et.\\nCras mattis consectetur purus sit amet fermentum.\\n      Cras justo odio, dapibus ac facilisis in, egestas eget quam.\\n      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.\\n      Praesent commodo cursus magna, vel scelerisque nisl consectetur et.\\nCras mattis consectetur purus sit amet fermentum.\\n      Cras justo odio, dapibus ac facilisis in, egestas eget quam.\\n      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.\\n      Praesent commodo cursus magna, vel scelerisque nisl consectetur et.\\nCras mattis consectetur purus sit amet fermentum.\\n      Cras justo odio, dapibus ac facilisis in, egestas eget quam.\\n      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.\\n      Praesent commodo cursus magna, vel scelerisque nisl consectetur et.\\nCras mattis consectetur purus sit amet fermentum.\\n      Cras justo odio, dapibus ac facilisis in, egestas eget quam.\\n      Morbi leo risus, porta ac consectetur ac, vestibulum at eros.\\n      Praesent commodo cursus magna, vel scelerisque nisl consectetur et."
+    "description": "Over 5 years of extensive experience in software development life cycle (SDLC) in web developing and designing using JavaScript technologies. Experience in developing websites using HTML, CSS, JavaScript, Angular JS, Vue.Js, Node.Js. Extensive experience in design, development and testing of high availability and scalable Web and Mobile applications. Team Member after working in different teams in different sizes(5 to +30 members) and more than 10 projects. Seeking a career opportunity as a Software Developer that allows to apply and enhance analytical and programming skills."
   },
   "educations": [
     {
-      "year": "2008 - 2012",
+      "year": "2009 - 2013",
       "title": "Talaye Daran High School",
-      "description": "Something here as description that I don't know exactly"
+      "description": "Maths Diplomas"
     },
     {
-      "year": "2012 - 2017",
+      "year": "2013 - 2018",
       "title": "Ferdowsi University Of Mashhad",
-      "description": "Something here as description that I don't know exactly. Something here as description that I don't know exactly"
-    },
-    {
-      "year": "2017 - 2022",
-      "title": "Again Talaye Daran High School",
-      "description": "Something here as description that I don't know exactly. Something here as description that I don't know exactly. Something here as description that I don't know exactly"
+      "description": "B. Sc. in Software Engineering"
     }
   ],
   "skills": [
-    { "title": "javascript", "score": 80 },
-    { "title": "nodejs", "score": 60 },
-    { "title": "react", "score": 30 },
-    { "title": "devops", "score": 70 }
+    { "title": "Programming", "score": 60 },
+    { "title": "Javascript", "score": 60 },
+    { "title": "Node.js", "score": 40 },
+    { "title": "JQuery", "score": 40 },
+    { "title": "React.js", "score": 40 },
+    { "title": "Vue.js", "score": 40 },
+    { "title": "Html & CSS", "score": 50 }
   ],
   "experiences": [
     {
-      "company": "Part",
-      "jobTitle": "backend",
-      "year": "2012 - 2013",
+      "company": "Part Software Group",
+      "jobTitle": "Junior Full Stack Developer",
+      "year": "2016 - 2017",
       "tasks": [
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
-        "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout"
+        "Developed full-stack web applications which processed, analyzed, and rendered data visually.",
+        "Planned, wrote, and debugged web applications and software with complete accuracy."
       ]
     },
     {
-      "company": "Part",
-      "jobTitle": "master",
-      "year": "2013 - 2015",
+      "company": "Part Software Group",
+      "jobTitle": "Junior Full Stack Developer",
+      "year": "2017 - 2018",
       "tasks": [
-        "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
-        "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,",
-        "Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,"
+        "Planned, wrote, and debugged web applications and software with complete accuracy.",
+        "Developed full-stack web applications which processed and analyzed sensitive bank data.",
+        "Playing as an Agile team member."
+      ]
+    },
+    {
+      "company": "Part Software Group",
+      "jobTitle": "Back End Developer",
+      "year": "2018 - 2021",
+      "tasks": [
+        "Developed Rest services and Fundamental Modules to be used in internal services and projects.",
+        "Developed and Maintained a specific Automation platform for the company.",
+        "Interact regularly with managers, clients to field queries and questions.",
+        "Performs technical analyses for development of new features.",
+        "Collaborate with system engineers, data scientists, front end developers and software developers to implement solutions that are aligned with and extend shared platforms and solutions."
       ]
     },
     {
       "company": "Infodeniz",
-      "jobTitle": "Front",
-      "year": "2015 - 2017",
+      "jobTitle": "Front End Developer",
+      "year": "2021 - Present",
       "tasks": [
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form",
-        "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form"
+        "Liaised with back end developers, front end developers, designers and CTO as needed.",
+        "Building websites and apps that are responsive and usable.",
+        "Implementing web design and development principles to build stable software.",
+        "Bringing mock-ups to life using HTML, CSS, JavaScript.",
+        "Testing to identify bugs and technical issues before and after deploying."
       ]
     }
   ],
   "contact": {
     "location": {
       "src": "https://api.mapbox.com/styles/v1/mapbox/light-v10/static/59.523251,36.299350,10/500x500?access_token=pk.eyJ1Ijoic2lyLXNhZWVkLTIwMTIiLCJhIjoiY2wxYXZoZmVuMGFnMjNjcDhla28zdGZiNSJ9.Eq6rqlFuVVx6DokI17muLQ",
-      "alt": "Map of the Edmund Pettus Bridge in Selma, Alabama, with a black 'L' marker positioned in the middle of the bridge."
+      "alt": "Iran, Mashhad"
     },
     "api": {}
   },
   "projects": [
     {
-      "title": "Merat",
-      "year": "2019 - 2021",
-      "position": "Software Developer",
-      "technologies": ["Nodejs", "Angular.js", "html", "css", "html", "css"],
-      "description": "some text here for description"
+      "title": "Rasam Project",
+      "year": "2016 - 2017",
+      "position": "Junior Full Stack Developer",
+      "technologies": ["Nodejs", "Angular.js", "html", "css"],
+      "description": "Charts, Statictics and Calculations over financial data."
     },
     {
-      "title": "Rasam",
-      "year": "2019 - 2021",
+      "title": "Merat Project",
+      "year": "2017 - 2018",
       "position": "Junior Full Stack Developer",
       "technologies": [
         "Nodejs",
         "Angular.js",
         "html",
-        "css",
-        "html",
-        "css",
-        "html",
         "css"
       ],
-      "description": "some text here for description"
+      "description": "Banking Project. Manipulating and processing sensitive data."
     },
     {
-      "title": "Signal",
-      "year": "2019 - 2021",
-      "position": "Developer",
-      "technologies": ["Nodejs", "Vue.js", "html", "css"]
+      "title": "Automation Service",
+      "year": "2020 - 2021",
+      "position": "Developer And Team Lead",
+      "technologies": ["Nodejs"],
+      "description": "An automation service for company which relates different services like gitlab, rocket chat and some other services and also make the communication of teams easier."
     },
     {
-      "title": "Test",
-      "year": "2019 - 2021",
-      "position": "Developer",
-      "technologies": ["Nodejs", "Vue.js", "html", "css"],
-      "description": "some text here for description. some text here for description. some text here for description. some text here for description. some text here for description. some text here for description"
+      "title": "Infodeniz",
+      "year": "2021 - Present",
+      "position": "Front End Developer",
+      "technologies": ["Nuxtjs", "Vue.js", "html", "css"],
+      "description": "Creating and managing content, making stepped-based tasks and connecting related people to each other."
     }
   ],
   "references": [
     {
-      "fullname": "Saeed Ataee",
-      "role": "Software Engineer",
+      "fullname": "Ehsan Shekari",
+      "role": "Software Engineer at KOJA??",
       "contactInfo": {
-        "email": "saeed@test.com",
+        "email": "ehsan@test.com",
         "phone": "989380692764",
         "instagram": "ataeesaeed1994"
       },
-      "img": "https://www.freecodecamp.org/news/content/images/2021/03/Quincy-Larson-photo.jpg"
+      "img": "https://media-exp1.licdn.com/dms/image/C5603AQHsjPUZ4G3KwQ/profile-displayphoto-shrink_200_200/0/1642270559434?e=1653523200&v=beta&t=fS2JCzuH8AVCFBjdYn0dEaHSRGOHlVeIBnuOl2FzE7Q"
     },
     {
-      "fullname": "Reza Shabani",
-      "role": "DevOps Engineer",
+      "fullname": "Hamid Ahmad Nejad",
+      "role": "Software Engineer At Fanap Soft",
       "contactInfo": {
-        "email": "reza@test.com",
+        "email": "hamid@test.com",
         "phone": "989380692764",
         "instagram": "ataeesaeed1994"
       },
       "img": "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157693/talent_tabs_section-9a2016252f5e887b11b53080a29d9013.jpg"
     },
     {
-      "fullname": "Reza Hemati",
-      "role": "Backend Engineer",
+      "fullname": "Majid Yaghouti",
+      "role": "Backend Engineer at KOJAA",
       "contactInfo": {
-        "email": "hemati@test.com",
+        "email": "majid@test.com",
         "phone": "989380692764",
         "instagram": "ataeesaeed1994"
       },
-      "img": "https://monteluke.com.au/wp-content/gallery/linkedin-profile-pictures/1.jpg"
+      "img": "https://i1.rgstatic.net/ii/profile.image/672310457536512-1537302712580_Q512/Majid-Yaghouti-Jafarabad-2.jpg"
     }
   ]
 }

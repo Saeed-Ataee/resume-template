@@ -12,7 +12,7 @@ export default function About({ info }) {
         xs={12}
         md={4}
         sx={{
-          background: 'url(/imgs/profile.webp)',
+          background: info.image ? `url(${info.image})` : 'url(/imgs/profile.webp)',
           width: '100%',
           height: 'auto',
           aspectRatio: '1 / 1',
