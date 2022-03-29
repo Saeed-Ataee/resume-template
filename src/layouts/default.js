@@ -24,97 +24,109 @@ export default function DefaultLayout() {
   const [data, setData] = useState(null);
   const [sections, setSections] = useState([]);
 
+  const generateSectionsObject = function () {
+    if (!data) {
+      return;
+    }
+    setSections({
+      about: {
+        title: 'About',
+        component: (
+          <Paper className='section' id='About'>
+            <About info={data.about} />
+          </Paper>
+        ),
+      },
+      bio: {
+        title: 'Bio',
+        component: (
+          <div className='section d-flex flex-column gap-3' id='Bio'>
+            <Description text={data.bio?.description} />
+            <div>
+              <LinkButton
+                text={'Download Resume'}
+                link={data.bio?.resumeLink}
+              />
+            </div>
+          </div>
+        ),
+      },
+      skills: {
+        title: 'Professional Skills',
+        component: (
+          <div className='section' id='Professional Skills'>
+            <h2>Professional Skills</h2>
+            <Paper>
+              <Skills skills={data.skills} />
+            </Paper>
+          </div>
+        ),
+      },
+      educations: {
+        title: 'Educations',
+        component: (
+          <div className='section' id='Educations'>
+            <h2>Educations</h2>
+            <EducationTimeline education={data.educations} />
+          </div>
+        ),
+      },
+      references: {
+        title: 'References',
+        component: (
+          <div className='section' id='References'>
+            <h2>References</h2>
+            <References references={data.references} />
+          </div>
+        ),
+      },
+      experiences: {
+        title: 'Work Experiences',
+        component: (
+          <div className='section' id='Work Experiences'>
+            <h2>Work Experiences</h2>
+            <ExperienceTimeLine experiences={data.experiences} />
+          </div>
+        ),
+      },
+      projects: {
+        title: 'Projects',
+        component: (
+          <div className='section' id='Projects'>
+            <h2>Projects</h2>
+            <Projects projects={data.projects} />
+          </div>
+        ),
+      },
+      contact: {
+        title: 'Contact Me',
+        component: (
+          <div className='section' id='Contact Me'>
+            <h2>Contact Me</h2>
+            <Contact location={data.contact?.location} />
+          </div>
+        ),
+      },
+    });
+  };
+
   useEffect(() => {
-    setLoading(true);
-    fetch('./info.json')
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data);
-        setSections({
-          about: {
-            title: 'About',
-            component: (
-                <Paper className='section' id='About'>
-                  <About info={data.about} />
-                </Paper>
-            ),
-          },
-          bio: {
-            title: 'Bio',
-            component: (
-                <div className='section d-flex flex-column gap-3' id='Bio'>
-                  <Description text={data.bio?.description} />
-                  <div>
-                    <LinkButton
-                      text={'Download Resume'}
-                      link={data.bio?.resumeLink}
-                    />
-                  </div>
-                </div>
-            ),
-          },
-          skills: {
-            title: 'Professional Skills',
-            component: (
-                <div className='section' id='Professional Skills'>
-                  <h2>Professional Skills</h2>
-                  <Paper>
-                    <Skills skills={data.skills} />
-                  </Paper>
-                </div>
-            ),
-          },
-          educations: {
-            title: 'Educations',
-            component: (
-                <div className='section' id='Educations'>
-                  <h2>Educations</h2>
-                  <EducationTimeline education={data.educations} />
-                </div>
-            ),
-          },
-          references: {
-            title: 'References',
-            component: (
-                <div className='section' id='References'>
-                  <h2>References</h2>
-                  <References references={data.references} />
-                </div>
-            ),
-          },
-          experiences: {
-            title: 'Work Experiences',
-            component: (
-                <div className='section' id='Work Experiences'>
-                  <h2>Work Experiences</h2>
-                  <ExperienceTimeLine experiences={data.experiences} />
-                </div>
-            ),
-          },
-          projects: {
-            title: 'Projects And Researches',
-            component: (
-                <div className='section' id='Projects And Researches'>
-                  <h2>Projects And Researches</h2>
-                  <Projects projects={data.projects} />
-                </div>
-            ),
-          },
-          contact: {
-            title: 'Contact Me',
-            component: (
-                <div className='section' id='Contact Me'>
-                  <h2>Contact Me</h2>
-                  <Contact location={data.contact?.location} />
-                </div>
-            ),
-          },
-        });
-        setLoading(false);
-      })
-      .catch((err) => {
+    generateSectionsObject();
+    setLoading(false);
+  }, [data]);
+
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const info = await fetch('./info.json');
+        const parsedInfo = await info.json();
+        setData(parsedInfo);
+      } catch (err) {
         console.log('error', err);
-      });
+      }
+    }
+    setLoading(true);
+    fetchData();
   }, []);
 
   return (
@@ -163,15 +175,11 @@ export default function DefaultLayout() {
                 flexDirection: 'column',
               }}
             >
-              {!data ? (
-                <div>Loading data</div>
-              ) : (
-                data.order?.map((sec, idx) => (
-                  <Fragment key={`section-${idx}`}>
-                    {data[sec] && sections[sec] && sections[sec].component}
-                  </Fragment>
-                ))
-              )}
+              {data?.order?.map((sec, idx) => (
+                <Fragment key={`section-${idx}`}>
+                  {data[sec] && sections[sec] && sections[sec].component}
+                </Fragment>
+              ))}
             </Grid>
           </Grid>
 
