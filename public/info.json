@@ -122,10 +122,8 @@
   ],
   "contact": {
     "location": {
-      "src": "https://api.mapbox.com/styles/v1/mapbox/light-v10/static/59.523251,36.299350,10/500x500?access_token=pk.eyJ1Ijoic2lyLXNhZWVkLTIwMTIiLCJhIjoiY2wxYXZoZmVuMGFnMjNjcDhla28zdGZiNSJ9.Eq6rqlFuVVx6DokI17muLQ",
       "alt": "Iran, Mashhad"
-    },
-    "api": {}
+    }
   },
   "projects": [
     {
