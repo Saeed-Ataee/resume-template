@@ -1,7 +1,11 @@
 import { Button, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { Formik, Form, Field } from 'formik';
+import { useState } from 'react';
 import * as Yup from 'yup';
+import { send } from '../../api/email';
+import { withSnackbar } from '../blocks/snack-bar';
+import OverlayLoading from '../blocks/overlay-loading';
 
 const ContactSchema = Yup.object().shape({
   fullname: Yup.string()
@@ -19,115 +23,147 @@ const ContactSchema = Yup.object().shape({
     .required('Message is required'),
 });
 
-export default function ContactForm() {
+function ContactForm({ snackbarShowMessage }) {
+  const [loading, setLoading] = useState(false);
 
-  const onSubmit = function(values, { resetForm }) {
+  const onSubmit = async function (values, { resetForm }) {
     console.log(values);
-    resetForm();
+    try {
+      setLoading(true);
+      await send(values);
+      snackbarShowMessage(`Email is successfully sent. Thank You.`);
+      resetForm();
+    } catch (error) {
+      snackbarShowMessage(`An Error occurred while sending Email.`, 'error');
+    }
+    setLoading(false);
   };
 
   return (
-    <Formik
-      initialValues={{
-        fullname: '',
-        email: '',
-        subject: '',
-        message: '',
-      }}
-      validationSchema={ContactSchema}
-      onSubmit={onSubmit}
-    >
-      {({ isValid, dirty }) => (
-        <Form className='d-flex flex-column gap-3'>
-          <Field name='fullname'>
-            {({ field, form, meta }) => (
-              <Box className='d-flex flex-column gap-2'>
-                <TextField
-                  {...field}
-                  label='Fullname'
-                  variant='standard'
-                  error={meta.touched && !!meta.error}
-                />
-                {meta.touched && meta.error && (
-                  <Typography
-                    component='span'
-                    sx={{ color: 'red', textAlign: 'start', fontSize: '12px' }}
-                  >
-                    {meta.error}
-                  </Typography>
-                )}
-              </Box>
-            )}
-          </Field>
+    <Box className='position-relative'>
+      {loading ? <OverlayLoading message={'Sending Email...'} /> : null}
+      <Formik
+        initialValues={{
+          fullname: '',
+          email: '',
+          subject: '',
+          message: '',
+        }}
+        validationSchema={ContactSchema}
+        onSubmit={onSubmit}
+      >
+        {({ isValid, dirty }) => (
+          <Form className='d-flex flex-column gap-3'>
+            <Field name='fullname'>
+              {({ field, form, meta }) => (
+                <Box className='d-flex flex-column gap-2'>
+                  <TextField
+                    {...field}
+                    label='Fullname'
+                    variant='standard'
+                    error={meta.touched && !!meta.error}
+                  />
+                  {meta.touched && meta.error && (
+                    <Typography
+                      component='span'
+                      sx={{
+                        color: 'red',
+                        textAlign: 'start',
+                        fontSize: '12px',
+                      }}
+                    >
+                      {meta.error}
+                    </Typography>
+                  )}
+                </Box>
+              )}
+            </Field>
 
-          <Field name='email'>
-            {({ field, form, meta }) => (
-              <Box className='d-flex flex-column gap-2'>
-                <TextField
-                  {...field}
-                  label='Email'
-                  variant='standard'
-                  error={meta.touched && !!meta.error}
-                />
-                {meta.touched && meta.error && (
-                  <Typography
-                    component='span'
-                    sx={{ color: 'red', textAlign: 'start', fontSize: '12px' }}
-                  >
-                    {meta.error}
-                  </Typography>
-                )}
-              </Box>
-            )}
-          </Field>
+            <Field name='email'>
+              {({ field, form, meta }) => (
+                <Box className='d-flex flex-column gap-2'>
+                  <TextField
+                    {...field}
+                    label='Email'
+                    variant='standard'
+                    error={meta.touched && !!meta.error}
+                  />
+                  {meta.touched && meta.error && (
+                    <Typography
+                      component='span'
+                      sx={{
+                        color: 'red',
+                        textAlign: 'start',
+                        fontSize: '12px',
+                      }}
+                    >
+                      {meta.error}
+                    </Typography>
+                  )}
+                </Box>
+              )}
+            </Field>
 
-          <Field name='subject'>
-            {({ field, form, meta }) => (
-              <Box className='d-flex flex-column gap-2'>
-                <TextField
-                  {...field}
-                  label='Subject'
-                  variant='standard'
-                  error={meta.touched && !!meta.error}
-                />
-                {meta.touched && meta.error && (
-                  <Typography
-                    component='span'
-                    sx={{ color: 'red', textAlign: 'start', fontSize: '12px' }}
-                  >
-                    {meta.error}
-                  </Typography>
-                )}
-              </Box>
-            )}
-          </Field>
+            <Field name='subject'>
+              {({ field, form, meta }) => (
+                <Box className='d-flex flex-column gap-2'>
+                  <TextField
+                    {...field}
+                    label='Subject'
+                    variant='standard'
+                    error={meta.touched && !!meta.error}
+                  />
+                  {meta.touched && meta.error && (
+                    <Typography
+                      component='span'
+                      sx={{
+                        color: 'red',
+                        textAlign: 'start',
+                        fontSize: '12px',
+                      }}
+                    >
+                      {meta.error}
+                    </Typography>
+                  )}
+                </Box>
+              )}
+            </Field>
 
-          <Field name='message'>
-            {({ field, form, meta }) => (
-              <Box className='d-flex flex-column gap-2'>
-                <TextField
-                  {...field}
-                  label='Message'
-                  variant='standard'
-                  error={meta.touched && !!meta.error}
-                  multiline
-                  rows={4}
-                />
-                {meta.touched && meta.error && (
-                  <Typography
-                    component='span'
-                    sx={{ color: 'red', textAlign: 'start', fontSize: '12px' }}
-                  >
-                    {meta.error}
-                  </Typography>
-                )}
-              </Box>
-            )}
-          </Field>
+            <Field name='message'>
+              {({ field, form, meta }) => (
+                <Box className='d-flex flex-column gap-2'>
+                  <TextField
+                    {...field}
+                    label='Message'
+                    variant='standard'
+                    error={meta.touched && !!meta.error}
+                    multiline
+                    rows={4}
+                  />
+                  {meta.touched && meta.error && (
+                    <Typography
+                      component='span'
+                      sx={{
+                        color: 'red',
+                        textAlign: 'start',
+                        fontSize: '12px',
+                      }}
+                    >
+                      {meta.error}
+                    </Typography>
+                  )}
+                </Box>
+              )}
+            </Field>
 
-          <Button sx={{ my: 2 }} type='submit' disabled={!dirty || !isValid}>Submit</Button>
-        </Form>
-      )}
-    </Formik>
+            <Button sx={{ my: 2 }} type='submit' disabled={!dirty || !isValid}>
+              Submit
+            </Button>
+          </Form>
+        )}
+      </Formik>
+    </Box>
   );
 }
+
+export default withSnackbar(ContactForm);

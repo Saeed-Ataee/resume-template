@@ -4,7 +4,7 @@ export default function Loading() {
   return (
     <Box
       sx={{
-        display: 'absolute',
+        position: 'absolute',
         width: '100vw',
         height: '100vh',
         backgroundColor: 'white',
