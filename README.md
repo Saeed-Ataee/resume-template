@@ -49,4 +49,4 @@ Use Icon Components from https://mui.com/components/material-icons link
 
 ### Primary Color
 
-You can change the default color of resume with changing the **$primary** variable in `src/assets/index.js` file.
+You can change the default color of resume with changing the **$primary** variable in `src/assets/variables.scss` file.
