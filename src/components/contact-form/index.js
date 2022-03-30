@@ -1,4 +1,3 @@
-import styled from '@emotion/styled';
 import { Button, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { Formik, Form, Field } from 'formik';
@@ -18,23 +17,6 @@ const ContactSchema = Yup.object().shape({
     .min(10, 'Message must be longer than 10 characters!')
     .max(500, 'Message must not be longer than 500 characters!')
     .required('Message is required'),
-});
-
-const CustomTextField = styled(TextField)({
-  boxShadow: 'none',
-  lineHeight: 1.5,
-  color: '#00d779',
-  '&:hover': {
-    color: '#00d779',
-    boxShadow: 'none',
-  },
-  '&:active': {
-    boxShadow: 'none',
-    color: '#00d779',
-  },
-  '& label:focus': {
-    boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
-  },
 });
 
 export default function ContactForm() {
@@ -60,7 +42,7 @@ export default function ContactForm() {
           <Field name='fullname'>
             {({ field, form, meta }) => (
               <Box className='d-flex flex-column gap-2'>
-                <CustomTextField
+                <TextField
                   {...field}
                   label='Fullname'
                   variant='standard'
@@ -81,7 +63,7 @@ export default function ContactForm() {
           <Field name='email'>
             {({ field, form, meta }) => (
               <Box className='d-flex flex-column gap-2'>
-                <CustomTextField
+                <TextField
                   {...field}
                   label='Email'
                   variant='standard'
@@ -102,7 +84,7 @@ export default function ContactForm() {
           <Field name='subject'>
             {({ field, form, meta }) => (
               <Box className='d-flex flex-column gap-2'>
-                <CustomTextField
+                <TextField
                   {...field}
                   label='Subject'
                   variant='standard'
@@ -123,7 +105,7 @@ export default function ContactForm() {
           <Field name='message'>
             {({ field, form, meta }) => (
               <Box className='d-flex flex-column gap-2'>
-                <CustomTextField
+                <TextField
                   {...field}
                   label='Message'
                   variant='standard'

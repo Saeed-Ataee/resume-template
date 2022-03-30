@@ -1,12 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.scss';
 import reportWebVitals from './reportWebVitals';
 import DefaultLayout from './layouts/default';
 
+import Theme from './assets/theme';
+import './assets/index.scss';
+
 ReactDOM.render(
   <React.StrictMode>
-    <DefaultLayout />
+    <Theme>
+      <DefaultLayout />
+    </Theme>
   </React.StrictMode>,
   document.getElementById('root')
 );

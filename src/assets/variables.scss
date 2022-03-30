@@ -1,0 +1,35 @@
+/// Slightly lighten a color
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+    @return mix(white, $color, $percentage);
+}
+
+/// Slightly darken a color
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix(black, $color, $percentage);
+}
+
+$primary: #34a5dd;
+$darkPrimary: shade($primary, 50%);
+$lightPrimary: tint($primary, 80%);
+$lighterPrimary: tint($primary, 60%);
+$darker: #39424a;
+$dark: #666;
+$lightGray: #c9cacc;
+
+:export {
+    primary: $primary;
+    lightPrimary: $lightPrimary;
+    darkPrimary: $darkPrimary;
+    lighterPrimary: $lighterPrimary;
+    darker: $darker;
+    dark: $dark;
+    lightGray: $lightGray;
+}

@@ -1,11 +1,18 @@
 import { Typography } from '@mui/material';
 import { Box } from '@mui/system';
+import { useTheme } from '@mui/styles';
 
 export default function Footer() {
+  const theme = useTheme();
+
   return (
     <Box
       className='d-flex flex-column flex-sm-row align-items-center gap-2 justify-content-center'
-      sx={{ borderTop: '1px solid #ccc', width: '100%', p: 2 }}
+      sx={{
+        borderTop: `1px solid ${theme.palette.lightGray.main}`,
+        width: '100%',
+        p: 2,
+      }}
     >
       <Typography component='span'>
         No Rights Reserved. Feel free to use and copy.

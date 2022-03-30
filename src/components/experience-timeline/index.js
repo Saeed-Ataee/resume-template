@@ -36,7 +36,7 @@ export default function ExperienceTimeLine({ experiences }) {
               <TimelineDot
                 sx={{
                   mx: 2,
-                  backgroundColor: '#00d779',
+                  backgroundColor: theme.palette.primary.main,
                   my: 0,
                   position: 'absolute',
                   top: 30,
@@ -65,7 +65,7 @@ export default function ExperienceTimeLine({ experiences }) {
               py: '12px',
               px: 2,
               backgroundColor: 'white',
-              borderTop: '6px solid #00d779',
+              borderTop: `6px solid ${theme.palette.primary.main}`,
               borderRadius: '4px',
               marginTop: index === 0 ? 0 : -10,
             }}
@@ -82,7 +82,7 @@ export default function ExperienceTimeLine({ experiences }) {
               component='span'
               sx={{
                 color: 'white',
-                backgroundColor: '#00d779',
+                backgroundColor: theme.palette.primary.main,
                 p: 1,
                 borderRadius: 2,
                 fontWeight: 'bold',

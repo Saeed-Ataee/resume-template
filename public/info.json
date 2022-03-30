@@ -22,9 +22,15 @@
       {
         "title": "Email",
         "value": "saeed.ataee.1994@gmail.com",
-        "icon": "Email"
+        "icon": "Email",
+        "link": "mailto:saeed.ataee.1994@gmail.com"
       },
-      { "title": "Phone", "value": "989380692764", "icon": "Phone" },
+      {
+        "title": "Phone",
+        "value": "989380692764",
+        "icon": "Phone",
+        "link": "tel:989380692764"
+      },
       {
         "title": "Location",
         "value": "Iran, Mashhad",
@@ -33,7 +39,14 @@
       {
         "title": "Instagram",
         "value": "@ataeesaeed1994",
-        "icon": "Instagram"
+        "icon": "Instagram",
+        "link": "https://instagram.com/ataeesaeed1994"
+      },
+      {
+        "title": "Linkedin",
+        "value": "https://www.linkedin.com/in/saeed-ataee-183403180",
+        "icon": "LinkedIn",
+        "link": "https://www.linkedin.com/in/saeed-ataee-183403180"
       }
     ]
   },
@@ -126,12 +139,7 @@
       "title": "Merat Project",
       "year": "2017 - 2018",
       "position": "Junior Full Stack Developer",
-      "technologies": [
-        "Nodejs",
-        "Angular.js",
-        "html",
-        "css"
-      ],
+      "technologies": ["Nodejs", "Angular.js", "html", "css"],
       "description": "Banking Project. Manipulating and processing sensitive data."
     },
     {
@@ -152,33 +160,33 @@
   "references": [
     {
       "fullname": "Ehsan Shekari",
-      "role": "Software Engineer at KOJA??",
+      "role": "Software Engineer at AlphaSense",
       "contactInfo": {
-        "email": "ehsan@test.com",
-        "phone": "989380692764",
-        "instagram": "ataeesaeed1994"
+        "email": "e.shekari@gmail.com",
+        "skype": "ehsanshekari",
+        "linkedin": "https://www.linkedin.com/in/ehsan-shekari"
       },
       "img": "https://media-exp1.licdn.com/dms/image/C5603AQHsjPUZ4G3KwQ/profile-displayphoto-shrink_200_200/0/1642270559434?e=1653523200&v=beta&t=fS2JCzuH8AVCFBjdYn0dEaHSRGOHlVeIBnuOl2FzE7Q"
     },
     {
       "fullname": "Hamid Ahmad Nejad",
-      "role": "Software Engineer At Fanap Soft",
+      "role": "Technical lead and full stack web developer at Fanap",
       "contactInfo": {
-        "email": "hamid@test.com",
-        "phone": "989380692764",
-        "instagram": "ataeesaeed1994"
+        "email": "ahmadnejad@outlook.com",
+        "skype": "live:ahmadnejad",
+        "linkedin": "https://www.linkedin.com/in/sayyed-hamid-ahmadnejad-3160a397/"
       },
-      "img": "https://bs-uploads.toptal.io/blackfish-uploads/components/image/content/file_file/file/157693/talent_tabs_section-9a2016252f5e887b11b53080a29d9013.jpg"
+      "img": "https://media-exp1.licdn.com/dms/image/D4E03AQFbf_ciWq58dw/profile-displayphoto-shrink_100_100/0/1644029104782?e=1654128000&v=beta&t=OCWMckDvNDYYOLYgs2PPl3XgzUfV8EKqL6KmgKVq-hw"
     },
     {
-      "fullname": "Majid Yaghouti",
-      "role": "Backend Engineer at KOJAA",
+      "fullname": "Masoud Masoumi Moghadam",
+      "role": "Deep Learnning Engineer",
       "contactInfo": {
-        "email": "majid@test.com",
-        "phone": "989380692764",
-        "instagram": "ataeesaeed1994"
+        "email": "masoud.masoumi.moghadam@outlook.com",
+        "skype": "masoud.masoumi.moghadam@outlook.com",
+        "linkedin": "https://www.linkedin.com/in/m-m-moghadam/"
       },
-      "img": "https://i1.rgstatic.net/ii/profile.image/672310457536512-1537302712580_Q512/Majid-Yaghouti-Jafarabad-2.jpg"
+      "img": "https://i1.sndcdn.com/avatars-000762532123-0lcomz-t500x500.jpg"
     }
   ]
 }

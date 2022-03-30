@@ -43,7 +43,7 @@ export default function EducationTimeline({ education }) {
             <TimelineDot
               sx={{
                 mx: 2,
-                backgroundColor: '#00d779',
+                backgroundColor: theme.palette.primary.main,
                 my: 0,
                 display: largerThanMd ? 'block' : 'none',
               }}
@@ -57,7 +57,7 @@ export default function EducationTimeline({ education }) {
               py: '12px',
               px: 2,
               backgroundColor: 'white',
-              borderTop: '6px solid #00d779',
+              borderTop: `6px solid ${theme.palette.primary.main}`,
               borderRadius: '4px',
             }}
           >

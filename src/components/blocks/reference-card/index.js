@@ -1,53 +1,82 @@
-import { Avatar, Box, Divider, IconButton, Paper, Typography } from '@mui/material';
+import {
+  Avatar,
+  Box,
+  Divider,
+  IconButton,
+  Paper,
+  Typography,
+} from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import PhoneIcon from '@mui/icons-material/Phone';
+import ChatIcon from '@mui/icons-material/Chat';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import styled from '@emotion/styled';
-
-const CustomIconButton = styled(IconButton)({
-  boxShadow: 'none',
-  textTransform: 'none',
-  borderColor: '#00d779',
-  color: '#fff',
-    width: '36px',
-    height: '36px',
-  backgroundColor: '#00d779',
-  '&:hover': {
-    backgroundColor: '#d8f3dc',
-    borderColor: '#00d779',
-    color: '#00d779',
-    boxShadow: 'none',
-  },
-  '&:active': {
-    boxShadow: 'none',
-    backgroundColor: '#d8f3dc',
-    borderColor: '#00d779',
-  },
-  '&:focus': {
-    boxShadow: '0 0 0 0.2rem rgba(60,221,151,.5)',
-  },
-});
+import { useTheme } from '@mui/styles';
 
 export default function ReferenceCard({ reference }) {
+  const theme = useTheme();
+
+  const CustomIconButton = styled(IconButton)({
+    boxShadow: 'none',
+    textTransform: 'none',
+    borderColor: theme.palette.primary.main,
+    color: 'white',
+    backgroundColor: theme.palette.primary.main,
+    '&:hover': {
+      backgroundColor: theme.palette.primary.lighter,
+      borderColor: theme.palette.primary.main,
+      color: theme.palette.primary.main,
+      boxShadow: 'none',
+    },
+    '&:active': {
+      boxShadow: 'none',
+      backgroundColor: theme.palette.primary.lighter,
+      borderColor: theme.palette.primary.main,
+    },
+    '&:focus': {
+      boxShadow: '0 0 0 0.2rem rgba(60,221,151,.5)',
+    },
+  });
+
   return (
-    <Paper className='d-flex flex-column align-items-center gap-2 p-4' sx={{ height: '100%', borderRadius: '8px' }}>
+    <Paper
+      className='d-flex flex-column align-items-center gap-2 p-4'
+      sx={{ height: '100%', borderRadius: '8px' }}
+    >
       <Avatar
         alt={reference.fullname}
         src={reference.img}
-        sx={{ width: 140, height: 140, border: '4px solid #00d779' }}
+        sx={{
+          width: 140,
+          height: 140,
+          border: `4px solid ${theme.palette.primary.main}`,
+        }}
       />
-      <Typography component='h4' sx={{fontSize: '20px', fontWeight: 'bold'}}>{reference.fullname}</Typography>
-      <Typography component='h6' sx={{color: '#00d779'}}>{reference.role}</Typography>
-      <Divider className='w-100 my-2' />
+      <Typography component='h4' sx={{ fontSize: '20px', fontWeight: 'bold' }}>
+        {reference.fullname}
+      </Typography>
+      <Typography component='h6' sx={{ color: theme.palette.primary.main }}>
+        {reference.role}
+      </Typography>
+      <Divider className='w-100 mb-2 mt-auto' />
       <Box className='d-flex align-center gap-2'>
-        <CustomIconButton aria-label='email' href={`mailTo:${reference.contactInfo.email}`}>
+        <CustomIconButton
+          aria-label='email'
+          href={`mailTo:${reference.contactInfo.email}`}
+        >
           <EmailIcon />
         </CustomIconButton>
-        <CustomIconButton aria-label='phone' href={`tel:${reference.contactInfo.phone}`}>
-          <PhoneIcon />
+        <CustomIconButton
+          aria-label='skype'
+          href={`skype:${reference.contactInfo.skype}?chat`}
+        >
+          <ChatIcon />
         </CustomIconButton>
-        <CustomIconButton aria-label='instagram' href={`https://instagram.com/${reference.contactInfo.instagram}`} target='_blank'>
-          <InstagramIcon />
+        <CustomIconButton
+          aria-label='linkedin'
+          href={reference.contactInfo.linkedin}
+          target='_blank'
+        >
+          <LinkedInIcon />
         </CustomIconButton>
       </Box>
     </Paper>

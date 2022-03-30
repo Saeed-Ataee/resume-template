@@ -187,14 +187,10 @@ export default function DefaultLayout() {
 
           <ScrollTop>
             <Fab
-              color='success'
+              color='primary'
               sx={{
-                backgroundColor: '#00d779',
                 color: 'white',
                 boxShadow: 'none',
-                [`&:hover`]: {
-                  backgroundColor: '#80ed99',
-                },
               }}
               size='small'
               aria-label='scroll back to top'

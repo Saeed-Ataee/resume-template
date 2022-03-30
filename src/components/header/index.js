@@ -12,8 +12,11 @@ import MenuItem from '@mui/material/MenuItem';
 import HideOnScroll from '../blocks/hide-on-scroll';
 import Logo from '../blocks/logo';
 import { Link } from '@mui/material';
+import { useTheme } from '@mui/styles';
 
 export default function Header({sections, logoText}) {
+  const theme = useTheme();
+
   const [anchorElNav, setAnchorElNav] = useState(null);
 
   const handleOpenNavMenu = (event) => {
@@ -103,7 +106,7 @@ export default function Header({sections, logoText}) {
                     minWidth: 'unset',
                     display: 'block',
                     '&:hover': {
-                      color: '#00d779',
+                      color: theme.palette.primary.main,
                     },
                   }}
                   href={`#${page}`}

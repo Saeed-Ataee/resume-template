@@ -46,3 +46,7 @@ You can update `info.json` file in public folder and modify your resume anytime 
 ### Icons in about section
 
 Use Icon Components from https://mui.com/components/material-icons link
+
+### Primary Color
+
+You can change the default color of resume with changing the **$primary** variable in `src/assets/index.js` file.
