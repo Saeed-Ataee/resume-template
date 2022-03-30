@@ -31,7 +31,7 @@ function ContactForm({ snackbarShowMessage }) {
     try {
       setLoading(true);
       await send(values);
-      snackbarShowMessage(`Email is successfully sent. Thank You.`);
+      snackbarShowMessage(`Email is sent successfully. Thank You.`);
       resetForm();
     } catch (error) {
       snackbarShowMessage(`An Error occurred while sending Email.`, 'error');
