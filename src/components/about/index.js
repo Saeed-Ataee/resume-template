@@ -1,5 +1,4 @@
-import { Grid, Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Grid, Typography, Box } from '@mui/material';
 import * as icons from '@mui/icons-material';
 import Quote from '../blocks/quote';
 import { createElement } from 'react';

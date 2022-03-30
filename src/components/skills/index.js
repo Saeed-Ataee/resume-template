@@ -1,4 +1,4 @@
-import { Box } from '@mui/system';
+import { Box } from '@mui/material';
 import BarChart from '../blocks/bar-chart';
 
 import { useTheme } from '@mui/material/styles';

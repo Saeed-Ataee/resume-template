@@ -1,5 +1,4 @@
-import { Chip, Paper, Typography } from '@mui/material';
-import { Box } from '@mui/system';
+import { Chip, Paper, Typography, Box } from '@mui/material';
 import LaptopChromebookIcon from '@mui/icons-material/LaptopChromebook';
 import { useTheme } from '@mui/styles';
 

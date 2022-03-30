@@ -1,5 +1,5 @@
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress';
-import { Box } from '@mui/system';
+import { Box } from '@mui/material';
 import { useTheme } from '@mui/styles';
 
 export default function BarChart({ value }) {

@@ -10,8 +10,7 @@ import {
 import BusinessIcon from '@mui/icons-material/Business';
 import TaskIcon from '@mui/icons-material/Task';
 import Typography from '@mui/material/Typography';
-import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
-import { Box } from '@mui/system';
+import { List, ListItem, ListItemIcon, ListItemText, Box } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 

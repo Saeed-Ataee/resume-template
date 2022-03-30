@@ -104,6 +104,8 @@ export default function Header({sections, logoText}) {
                     my: 2,
                     color: 'white',
                     minWidth: 'unset',
+                    textTransform: 'none',
+                    whiteSpace: 'nowrap',
                     display: 'block',
                     '&:hover': {
                       color: theme.palette.primary.main,

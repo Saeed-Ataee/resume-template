@@ -164,9 +164,8 @@ export default function DefaultLayout() {
             <Grid
               item
               gap={8}
-              xs={12}
-              md={10}
-              lg={7}
+              md={12}
+              lg={8}
               sx={{
                 width: '100%',
                 height: 'auto',
