@@ -16,6 +16,7 @@
   @return mix(black, $color, $percentage);
 }
 
+$bg-color: #efefef;
 $primary: #04da82;
 $darkPrimary: shade($primary, 50%);
 $lightPrimary: tint($primary, 80%);
