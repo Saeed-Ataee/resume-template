@@ -43,3 +43,7 @@ Change the default color of resume with changing the **$primary** variable in `s
 ### Email Service
 
 You must create an account in [Emailjs](https://www.emailjs.com/) Service and copy User ID, Service ID and Template ID in `.env` file.
+
+## Preview
+
+![Preview](preview.png "Resume template")

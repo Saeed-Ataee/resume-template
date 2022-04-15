@@ -14,6 +14,7 @@ export default function ProjectCard({ project }) {
         height: '100%',
         borderBottom: `6px solid ${theme.palette.primary.main}`,
       }}
+      elevation={0}
     >
       <Box className='d-flex align-items-center gap-3'>
         <LaptopChromebookIcon

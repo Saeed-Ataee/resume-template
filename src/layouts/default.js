@@ -32,7 +32,7 @@ export default function DefaultLayout() {
       about: {
         title: 'About',
         component: (
-          <Paper className='section' id='About'>
+          <Paper className='section' id='About' elevation={0}>
             <About info={data.about} />
           </Paper>
         ),
@@ -56,7 +56,7 @@ export default function DefaultLayout() {
         component: (
           <div className='section' id='Professional Skills'>
             <h2>Professional Skills</h2>
-            <Paper>
+            <Paper elevation={0}>
               <Skills skills={data.skills} />
             </Paper>
           </div>

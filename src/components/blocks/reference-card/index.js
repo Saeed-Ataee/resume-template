@@ -41,6 +41,7 @@ export default function ReferenceCard({ reference }) {
     <Paper
       className='d-flex flex-column align-items-center gap-2 p-4'
       sx={{ height: '100%', borderRadius: '8px' }}
+      elevation={0}
     >
       <Avatar
         alt={reference.fullname}

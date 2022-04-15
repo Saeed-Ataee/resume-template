@@ -13,6 +13,7 @@ export default function Contact({ api, location }) {
             borderLeft: `6px solid ${theme.palette.primary.main}`,
             height: '100%',
           }}
+          elevation={0}
         >
           <Typography component='h4' sx={{ fontSize: '20px' }}>
             Feel free to Contact me
